@@ -1,5 +1,5 @@
-// const baseURL = "http://2584925-lab6-sd-24-api.azurewebsites.net/";
-const baseURL = "http://localhost:3001/";
+const baseURL = "https://2584925-lab6-sd-24-api.azurewebsites.net/";
+// const baseURL = "http://localhost:3001/";
 
 document.addEventListener('DOMContentLoaded', () => {
     const loadCarsBtn = document.getElementById('loadCarsBtn');
