@@ -34,7 +34,8 @@ function addCar(newCar) {
     fetch(baseURL + 'cars', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'mode': "cors",
         },
         body: JSON.stringify(newCar)
     })
@@ -64,7 +65,10 @@ carForm.addEventListener('submit', event => {
 function removeCar(index) {
     const carId = cars[index].id;
     fetch(baseURL + `cars/${carId}`, {
-        method: 'DELETE'
+        method: 'DELETE',
+        headers: {
+            'mode': "cors",
+        },
     })
         .then(response => response.json())
         .then(data => {
